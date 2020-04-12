@@ -1,14 +1,12 @@
 @font-face {
     font-family: "ArchitectsDaughterRegular";
-    src:
-        local("ArchitectsDaughter"),
-        url("../font/ArchitectsDaughter.ttf");
+    src: url("../font/ArchitectsDaughter.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: "ArchitectsDaughter";
+    font-family: "ArchitectsDaughterRegular";
 }
 
 body {
@@ -26,13 +24,13 @@ h2 {
 }
 
 .indexTitleImage {
-    width: 70%;
+    width: 90%;
 }
 
 .spacing-index {
     position: relative;
     height: 5vh;
-    width: 10%;
+    width: 30px;
 }
 
 .downloads {
