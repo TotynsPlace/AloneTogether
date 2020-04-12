@@ -1,6 +1,27 @@
+@font-face {
+    font-family: "ArchitectsDaughterRegular";
+    src:
+        local("ArchitectsDaughter"),
+        url("../font/ArchitectsDaughter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "ArchitectsDaughter";
+}
+
 body {
     background-color: black;
     color: white;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -11,14 +32,22 @@ body {
 .spacing-index {
     position: relative;
     height: 5vh;
-    /* background-color: red; */
+    width: 10%;
 }
 
-#downloads {
-    position: relative;
-    margin: auto;
-    text-align: left;
-    width: 70%;
-    /* background-color: red; */
+.downloads {
+    margin: 20px;
+    
+    text-align: center;
+    width: 30%;
+    min-width: 200px;
 }
- 
+
+#download-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 80%;
+    margin: auto;
+}
