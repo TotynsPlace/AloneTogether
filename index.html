@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <title>Alone Together the Story</title>
     <meta name="author" content="Evan Sklarski">
-    <link rel="stylesheet" href="website/alonetogether.css">
-    <script src="website/alonetogether.js"></script>
+    <link rel="stylesheet" href="css/general-style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -24,13 +25,13 @@
             <h2>Download:</h2>
             <table>
                 <tr>
-                    <td>PDF:</td><td><input type="button" value="click here!" onclick='location.href = "AloneTogether.pdf"'></td>
+                    <td>PDF:</td><td><input type="button" value="click here!" onclick='download("pdf");'></td>
                 </tr>
                 <tr>
-                    <td>ePub:</td><td><input type="button" value="click here!" onclick='location.href = "AloneTogether.epub"'></td>
+                    <td>ePub:</td><td><input type="button" value="click here!" onclick='download("epub");'></td>
                 </tr>
                 <tr>
-                    <td>Kindle:</td><td><input type="button" value="click here!" onclick='location.href = "AloneTogether.mobi"'></td>
+                    <td>Kindle:</td><td><input type="button" value="click here!" onclick='download("mobi");'></td>
                 </tr>
             </table>
         </div>

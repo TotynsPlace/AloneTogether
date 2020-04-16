@@ -1,28 +1,4 @@
-@font-face {
-    font-family: "ArchitectsDaughterRegular";
-    src: url("../font/ArchitectsDaughter.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    font-family: "ArchitectsDaughterRegular";
-}
-
-body {
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-table {
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-}
-
+/* index.html style */
 .indexTitleImage {
     width: 90%;
 }
