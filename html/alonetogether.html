@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width height=device-height">
+    <meta name="viewport" content="width=device-width, height=device-height">
     <title>Alone Together the Story</title>
     <meta name="author" content="Evan Sklarski">
     <link rel="stylesheet" href="../css/general-style.css">
@@ -10,28 +10,115 @@
     <script src="../js/alonetogether.js"></script>
 </head>
 
-<body>
+<body onload="init();">
     <div id="container">
-        <!-- page 1 -->
-        <div class="page-container">
 
+        <!-- blank page for opposite title page -->
+        <div class="page-container" id="0" style="display: block;">
+            <div class="enforced-ratio"></div>
         </div>
-        <!-- page 2 -->
-        <div>
+        <!-- title page -->
+        <div class="page-container" id="1" style="display: block;">
+            <div class="enforced-ratio">
+                <img src="../images/story/title.jpg" alt="Title Page" class="page-image">
+            </div>
+        </div>
 
+        <!-- page 2 -->
+        <div class="page-container" id="2" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page2.jpg" alt="Page 2" class="page-image">
+            </div>
         </div>
         <!-- page 3 -->
-        <div>
-
+        <div class="page-container" id="3" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page3.jpg" alt="Page 3" class="page-image">
+            </div>
         </div>
-        <!-- page 4 -->
-        <div>
 
+        <!-- page 4 -->
+        <div class="page-container" id="4" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page4.jpg" alt="Page 4" class="page-image">
+            </div>
         </div>
         <!-- page 5 -->
-        <div>
+        <div class="page-container" id="5" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page5.jpg" alt="Page 5" class="page-image">
+            </div>
+        </div>
 
+        <!-- page 6 -->
+        <div class="page-container" id="6" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page6.jpg" alt="Page 6" class="page-image">
+            </div>
+        </div>
+        <!-- page 7 -->
+        <div class="page-container" id="7" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page7.jpg" alt="Page 7" class="page-image">
+            </div>
+        </div>
+
+        <!-- page 8 -->
+        <div class="page-container" id="8" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page8.jpg" alt="Page 8" class="page-image">
+            </div>
+        </div>
+        <!-- page 9 -->
+        <div class="page-container" id="9" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page9.jpg" alt="Page 9" class="page-image">
+            </div>
+        </div>
+
+        <!-- page 10 -->
+        <div class="page-container" id="10" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page10.jpg" alt="Page 10" class="page-image">
+            </div>
+        </div>
+        <!-- page 11 -->
+        <div class="page-container" id="11" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page11.jpg" alt="Page 11" class="page-image">
+            </div>
+        </div>
+
+        <!-- page 12 -->
+        <div class="page-container" id="12" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page12.jpg" alt="Page 12" class="page-image">
+            </div>
+        </div>
+        <!-- page 13 -->
+        <div class="page-container" id="13" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/story/page13.jpg" alt="Page 13" class="page-image">
+            </div>
+        </div>
+
+        <!-- error -->
+        <div class="page-container" id="14" style="display: none;">
+            <div class="enforced-ratio">
+                <img src="../images/FindingTotyn-icon.png" alt="Page 13" class="page-image">
+                <p>Sorry, this doesn't currently work in portrait. Please rotate to landscape dimensions.</p>
+            </div>
         </div>
     </div>
 </body>
+<footer>
+    <div id="story-footer" style="display: flex;">
+        <div>
+            <input type="button" value="back" id="nav-button-back" onclick="navigate('back');">
+        </div>
+        <div>
+            <input type="button" value="next" id="nav-button-forward" onclick="navigate('forward');">
+        </div>
+    </div>
+</footer>
 </html>
