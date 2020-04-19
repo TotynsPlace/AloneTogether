@@ -1,4 +1,4 @@
-PAGES = document.getElementsByClassName("page-container");
+PAGES = document.getElementsByClassName("page");
 ORIENTATION = "";
 CURRENT_INDEX = 0;
 
