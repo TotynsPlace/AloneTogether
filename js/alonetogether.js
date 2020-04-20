@@ -1,12 +1,13 @@
-PAGES = document.getElementsByClassName("page");
+PAGES = "";
 ORIENTATION = "";
 CURRENT_INDEX = 0;
 
 window.addEventListener('resize', function(){ layout(); });
 
-function init() {
+window.addEventListener('DOMContentLoaded', (event) => {
+    PAGES = document.getElementsByClassName("page");
     layout();
-}
+});
 
 function layout() {
     if (window.innerWidth > window.innerHeight) {
