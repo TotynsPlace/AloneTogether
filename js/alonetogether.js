@@ -39,25 +39,21 @@ function navigate(direction) {
 }
 
 function transitionPages(error) {
+    var indicies;
+
     if (error == null) {
-        for (var i = 0; i < PAGES.length; i++) {
-            if (i == CURRENT_INDEX || i == CURRENT_INDEX + 1) {
-                if (PAGES[i].style.display == "none") {
-                    PAGES[i].style.display = "block";
-                }
-            } else {
-                PAGES[i].style.display = "none";
-            }
-        }
+        indicies = [ CURRENT_INDEX, CURRENT_INDEX + 1 ];
     } else {
-        for (var i = 0; i < PAGES.length; i++) {
-            if (i == 14) {
-                if (PAGES[i].style.display == "none") {
-                    PAGES[i].style.display = "block";
-                }
-            } else {
-                PAGES[i].style.display = "none";
+        indicies = [14];
+    }
+
+    for (var i = 0; i < PAGES.length; i++) {
+        if (indicies.includes(i)) {
+            if (PAGES[i].style.display == "none") {
+                PAGES[i].style.display = "block";
             }
+        } else {
+            PAGES[i].style.display = "none";
         }
     }
 }
