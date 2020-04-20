@@ -20,6 +20,9 @@ body {
     background-color: black;
     color: white;
     text-align: center;
+    scrollbar-color: darkorchid rgb(36, 12, 48);
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 table {
@@ -38,31 +41,32 @@ h3 {
 p {
     font-size: 3vh;
     text-align: left;
+    line-height: 1.5;
 }
 
 #container {
     display: flex;
-    height: 87vh;
+    height: 85vh;
     width: 98vw;
     margin: auto;
     flex-flow: row;
 }
 
 .empty-container {
-    background: var(--background1);
+    background: var(--background2);
     position: relative;
     width: 20%;
 }
 
 .text-container {
-    background: var(--background1);
+    background: var(--background2);
     width: 40%;
     position: relative;
     overflow-y: scroll;
 }
 
 .image-container {
-    background: var(--background2);
+    background: var(--background1);
     width: 60%;
     position: relative;
 }
@@ -76,7 +80,6 @@ p {
 *[class="enforced-ratio"] {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
-    height: 100%;
     color: white;
     font-size: 24px;
     text-align: center;
@@ -100,18 +103,29 @@ p {
     height: 100%;
 }
 
-.page-image {
-    width: 100%;
-    max-height: 99%;
+.enforced-ratio-error {
+    padding: 20px;
+}
+
+*[class="page-image"] {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     object-fit: contain;
 }
 
 .page-image-portrait {
     max-height: 99%;
-    object-fit: contain;
 }
 
-.title-image {
+.page-image-title {
     width: 100%;
     max-height: 60%;
     object-fit: contain;
@@ -124,7 +138,7 @@ p {
 #story-footer {
     justify-content: space-around;
     border-top: 1px solid darkorchid;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 /* #nav-button-back {
@@ -149,7 +163,7 @@ p {
 @media only screen and (min-width: 1000px)
 {
     #container {
-        height: 92vh;
+        height: 91vh;
     }
 
     p {

@@ -10,30 +10,30 @@
     <script src="../js/alonetogether.js"></script>
 </head>
 
-<body onload="init();">
+<body>
     <div id="container">
 
-        <!-- blank page for opposite title page -->
+    <!-- blank page to space title page -->
         <div class="empty-container page" id="0" style="display: block;">
             <div class="enforced-ratio"></div>
         </div>
-        <!-- title page -->
+    <!-- title page -->
         <div class="image-container page" id="1" style="display: block;">
             <div class="enforced-ratio-title">
-                <img src="../images/FindingTotyn.jpg" alt="Title Page" class="title-image">
+                <img src="../images/FindingTotyn.jpg" alt="Title Page" class="page-image-title" loading="eager">
                 <h3>Alone Together</h3>
                 <p class="centered-text">Writen by Jill Fellows</p>
                 <p class="centered-text">Illustrated by Amy Skinner</p>
             </div>
         </div>
 
-        <!-- page 2 -->
+    <!-- page 2 -->
         <div class="image-container page" id="2" style="display: none;">
             <div class="enforced-ratio-image">
-                <img src="../images/Family.jpg" alt="Page 2" class="page-image">
+                <img src="../images/Family.jpg" alt="Page 2" class="page-image" loading="lazy">
             </div>
         </div>
-        <!-- page 3 -->
+    <!-- page 3 -->
         <div class="text-container page" id="3" style="display: none;">
             <div class="enforced-ratio-text">
                 <p>Audrey lived in a house that was connected to the houses on either side in a long row stretching out for what seemed like forever. Or at least tothe end of the block, which was basically forever. All the houses looked the same. And inside people lived, with only the thin walls between them.</p>
@@ -55,13 +55,13 @@
             </div>
         </div>
 
-        <!-- page 4 -->
+    <!-- page 4 -->
         <div class="image-container page" id="4" style="display: none;">
             <div class="enforced-ratio-image">
-                <img src="../images/houses.jpg" alt="Page 4" class="page-image">
+                <img src="../images/houses.jpg" alt="Page 4" class="page-image" loading="lazy">
             </div>
         </div>
-        <!-- page 5 -->
+    <!-- page 5 -->
         <div class="text-container page" id="5" style="display: none;">
             <div class="enforced-ratio-text">
                 <p>“I know how to do it,” she shouted at Daddy when he soaped up her hands after they got home from a walk.</p>
@@ -79,13 +79,13 @@
             </div>
         </div>
 
-        <!-- page 6 -->
+    <!-- page 6 -->
         <div class="image-container page" id="6" style="display: none;">
             <div class="enforced-ratio-image">
-                <img src="../images/puddles.jpg" alt="Page 6" class="page-image-portrait">
+                <img src="../images/puddles.jpg" alt="Page 6" class="page-image-portrait" loading="lazy">
             </div>
         </div>
-        <!-- page 7 -->
+    <!-- page 7 -->
         <div class="text-container page" id="7" style="display: none;">
             <div class="enforced-ratio-text">
                 <p>“Mum, is a prince going to come rescue me?”</p>
@@ -106,13 +106,13 @@
             </div>
         </div>
 
-        <!-- page 8 -->
+    <!-- page 8 -->
         <div class="image-container page" id="8" style="display: none;">
             <div class="enforced-ratio-image">
-                <img src="../images/FindingTotyn.jpg" alt="Page 8" class="page-image">
+                <img src="../images/FindingTotyn.jpg" alt="Page 8" class="page-image" loading="lazy">
             </div>
         </div>
-        <!-- page 9 -->
+    <!-- page 9 -->
         <div class="text-container page" id="9" style="display: none;">
             <div class="enforced-ratio-text">
                 <p>Then she heard someone crying.</p>
@@ -132,16 +132,15 @@
             </div>
         </div>
 
-        <!-- page 10 -->
+    <!-- page 10 -->
         <div class="image-container page" id="10" style="display: none;">
             <div class="enforced-ratio-image">
-                <img src="../images/Hooray.jpg" alt="Page 10" class="page-image-portrait">
+                <img src="../images/Hooray.jpg" alt="Page 10" class="page-image-portrait" loading="lazy">
             </div>
         </div>
-        <!-- page 11 -->
+    <!-- page 11 -->
         <div class="text-container page" id="11" style="display: none;">
             <div class="enforced-ratio-text">
-                <!-- <img src="../images/story/page11.jpg" alt="Page 11" class="page-image"> -->
                 <p>“Daddy, Totyn is here.”</p>
                 <p>“Is he?” Daddy asked. “Well, why don’t you go play with him while I cook
                     dinner, okay?”</p>
@@ -162,16 +161,15 @@
             </div>
         </div>
 
-        <!-- page 12 -->
+    <!-- page 12 -->
         <div class="image-container page" id="12" style="display: none;">
             <div class="enforced-ratio-image">
-                <img src="../images/Handwash-crop.jpg" alt="Page 12" class="page-image">
+                <img src="../images/Handwash-crop.jpg" alt="Page 12" class="page-image-portrait" loading="lazy">
             </div>
         </div>
-        <!-- page 13 -->
+    <!-- page 13 -->
         <div class="text-container page" id="13" style="display: none;">
             <div class="enforced-ratio-text">
-                <!-- <img src="../images/story/page13.jpg" alt="Page 13" class="page-image"> -->
                 <p>Totyn stared at his big paws. “I’ve never washed my hands before.”</p>
                 <p>“I can show you,” Audrey said with confidence. “I know all about how to wash hands. I do it All. The. Time.”</p>
                 <p>“Okay,” Totyn grinned.</p>
@@ -190,15 +188,17 @@
             </div>
         </div>
 
-        <!-- error -->
+    <!-- error page -->
         <div class="error-container page" id="14" style="display: none;">
-            <div class="enforced-ratio">
-                <img src="../images/FindingTotyn-icon.png" alt="Page 13" class="title-image">
+            <div class="enforced-ratio-error">
+                <img src="../images/FindingTotyn-icon.png" alt="Page 13" class="page-image-title" loading="eager">
                 <p>Sorry, this doesn't currently work in portrait. Please rotate to landscape dimensions.</p>
             </div>
         </div>
-    </div>
+
+    </div><!-- id="container" -->
 </body>
+
 <footer>
     <div id="story-footer" style="display: flex;">
         <div>
