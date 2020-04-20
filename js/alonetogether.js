@@ -2,9 +2,9 @@ PAGES = "";
 ORIENTATION = "";
 CURRENT_INDEX = 0;
 
-window.addEventListener('resize', function(){ layout(); });
+window.addEventListener('resize', function() { layout(); });
 
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', function() {
     PAGES = document.getElementsByClassName("page");
     layout();
 });
