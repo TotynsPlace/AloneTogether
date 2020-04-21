@@ -7,6 +7,7 @@ window.addEventListener('resize', function() { layout(); });
 window.addEventListener('DOMContentLoaded', function() {
     PAGES = document.getElementsByClassName("page");
     layout();
+    buttons();
 });
 
 function layout() {
@@ -56,5 +57,23 @@ function transitionPages(error) {
             PAGES[i].style.display = "none";
         }
     }
+
+    buttons();
 }
 
+function buttons() {
+    var fwd  = document.getElementById("nav-button-forward");
+    var back = document.getElementById("nav-button-back");
+
+    if (CURRENT_INDEX == 0) {
+        back.style.display = "none";
+    } else {
+        back.style.display = "block";
+    }
+
+    if (CURRENT_INDEX == 12) {
+        fwd.style.display = "none";
+    } else {
+        fwd.style.display = "block";
+    }
+}
