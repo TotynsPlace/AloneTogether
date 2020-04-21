@@ -46,7 +46,7 @@ p {
 
 #container {
     display: flex;
-    height: 85vh;
+    height: calc(90vh - 20px);
     width: 98vw;
     margin: auto;
     flex-flow: row;
@@ -104,7 +104,8 @@ p {
 }
 
 .enforced-ratio-error {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 *[class="page-image"] {
@@ -136,22 +137,37 @@ p {
 }
 
 #story-footer {
-    justify-content: space-around;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
     border-top: 1px solid darkorchid;
     padding-top: 10px;
+    height: 10vh;
 }
 
-/* #nav-button-back {
+*[id^='nav-button-'] {
+    width: 39%;
+    position: fixed;
+}
+
+#nav-button-back {
+    left: 10px;
 }
 
 #nav-button-forward {
-} */
+    right: 10px;
+}
 
 /* tablet */
 @media only screen and (min-width: 850px)
 {
     #container {
-        height: 90vh;
+        height: calc(93vh - 20px);
+    }
+
+    #story-footer {
+        height: 7vh;
     }
 
     p {
@@ -163,7 +179,11 @@ p {
 @media only screen and (min-width: 1000px)
 {
     #container {
-        height: 91vh;
+        height: calc(94vh - 20px);
+    }
+
+    #story-footer {
+        height: 6vh;
     }
 
     p {
