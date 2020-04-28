@@ -19,11 +19,14 @@ body {
     color: white;
     text-align: center;
     scrollbar-color: darkorchid rgb(36, 12, 48);
-    scrollbar-width: none;
 }
 
 table {
     margin: auto;
+}
+
+td {
+    padding: 10px;
 }
 
 h1 {
@@ -33,11 +36,12 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 3vmin;
+    font-size: larger;
+    text-decoration: underline;
 }
 
 h3 {
-    font-size: 6vh;
+    font-size: larger;
     line-height: 1;
     margin: 0px;
 }
@@ -62,25 +66,27 @@ p {
         margin-top: 20px;
         margin-left: 10px;
         margin-bottom: 20px;
+        margin-right: 10px;
     }
 
     .indexTitleImage {
-        width: 90%;
+        width: 100%;
     }
 
     #download-container {
         display: flex;
         flex-flow: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
         align-content: flex-start;
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
     .downloads {
         margin: 20px;
         text-align: center;
-        width: 30%;
+        flex-basis: 40%;
         min-width: 200px;
     }
 
@@ -226,6 +232,10 @@ p {
         #index-container {
             width: calc(100% - 80px);
             margin: 30px;
+        }
+
+        .indexTitleImage {
+            width: 90%;
         }
     }
 
