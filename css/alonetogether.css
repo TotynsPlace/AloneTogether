@@ -42,7 +42,7 @@ h3 {
 }
 
 p {
-    font-size: 4vh;
+    font-size: medium;
     text-align: left;
     line-height: 1.5;
 }
@@ -153,6 +153,7 @@ p {
     .enforced-ratio-error {
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
 
 /* image styling */
@@ -207,6 +208,10 @@ p {
 /* tablet */
     @media only screen and (min-width: 850px)
     {
+        h3 {
+            font-size: 5vh;
+        }
+
         #container {
             height: calc(93vh - 20px);
         }
@@ -214,24 +219,20 @@ p {
         #story-footer {
             height: 7vh;
         }
-
-        p {
-            font-size: 3vh;
-        }
     }
 
 /* desktop */
     @media only screen and (min-width: 1000px)
     {
+        h3 {
+            font-size: 4vh;
+        }
+
         #container {
             height: calc(94vh - 20px);
         }
 
         #story-footer {
             height: 6vh;
-        }
-
-        p {
-            font-size: 2vh;
         }
     }
