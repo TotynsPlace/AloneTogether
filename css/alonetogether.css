@@ -97,6 +97,18 @@ p {
         width: 30px;
     }
 
+    #critter-image {
+        width: 40%;
+        margin: auto;
+    }
+
+    #critter-text {
+        font-size: xx-small;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
 
 /************************** alonetogether.html style ***************/
 /* main container */

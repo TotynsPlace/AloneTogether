@@ -34,6 +34,9 @@ function navigate(direction) {
             CURRENT_INDEX -= 2;
             if (CURRENT_INDEX < 0) { CURRENT_INDEX = 0 }
             break;
+        case "start":
+            CURRENT_INDEX = 0;
+            break;
     }
 
     transitionPages();
