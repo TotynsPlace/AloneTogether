@@ -28,6 +28,7 @@ table {
 
 h1 {
     font-size: 6vh;
+    line-height: 1;
 }
 
 h2 {
@@ -55,10 +56,12 @@ p {
 /************************** index.html style ***********************/
     #index-container {
         background: var(--background2);
-        width: calc(100% - 80px);
+        width: calc(100% - 40px);
         position: relative;
         padding: 10px;
-        margin: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
     }
 
     .indexTitleImage {
@@ -218,6 +221,11 @@ p {
 
         #story-footer {
             height: 7vh;
+        }
+
+        #index-container {
+            width: calc(100% - 80px);
+            margin: 30px;
         }
     }
 
